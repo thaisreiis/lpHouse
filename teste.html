@@ -1,0 +1,85 @@
+<header class="header">
+    <a href="#">
+      <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
+    </a>
+
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link" href="#">Galeria</a></li>
+        <li><a class="main-nav-link" href="#">Informação</a></li>
+        <li><a class="main-nav-link" href="#">Localização</a></li>
+        <li><a class="main-nav-link" href="#">Google Maps</a></li>
+        <li><a class="main-nav-link nav-cta" href="#">Entre em contato</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+  </header>
+
+
+
+  ****************************
+
+  <div class="col">
+
+    <form method="POST" id="form" class="custom-form">
+
+      <h3 class="form-title">Solicite um orçamento</h3>
+
+      <div class="mb-3">
+
+        <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome">
+
+      </div>
+
+      <div class="mb-3">
+
+        <input type="tel" name="telefone" class="form-control phone-input" id="telefone" placeholder="DDD + Telefone" maxlength="15">
+
+      </div>
+      <div class="mb-3 input-area">
+        <div class="form-control-select">
+        <!-- <label _ngcontent-hpf-c8="" class="required" for="necessidade">Quais ambientes deseja realizar orçamento?</label> -->
+        <c-input-select _ngcontent-hpf-c8="">
+          <select name="orcamento" class="input browser-default ng-pristine ng-valid ng-touched" materialize="material_select" placeholder="selecione">
+            <option selected="" value="" id="id1">Quais ambientes deseja realizar orçamento? </option>
+            <!----><option value="Casa completa">Casa completa</option>
+            <option value="Cozinha">Cozinha</option>
+            <option value="Dormitório">Dormitório</option>
+            <option value="Outros">Outros</option>
+          </select><!---->
+        </c-input-select>
+      </div>
+      </div>
+
+      <div class="mb-3">
+        <div class="form-control-select">
+          <!-- <label _ngcontent-hpf-c8="" class="required" for="necessidade">Quais ambientes deseja realizar orçamento?</label> -->
+          <c-input-select _ngcontent-hpf-c8="">
+            <select name="urgencia" class="input browser-default ng-pristine ng-valid ng-touched" materialize="material_select" placeholder="selecione">
+              <option selected="" value="" id="id2">Quão urgente é o projeto?</option>
+              <!----><option value="Prioridade alta">Prioridade alta</option>
+              <option value="É importante, mas não estou com pressa">É importante, mas não estou com pressa</option>
+              <option value="Apenas curioso. Não é tão urgente">Apenas curioso. Não é tão urgente</option>
+
+            </select><!---->
+          </c-input-select>
+        </div>
+      </div>
+
+    <span id="mensagem" style="display:none"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Preencha os campos. </span>
+      <span id="mensagem2" class="green-text" style="display:none;"><i class="fa fa-check" aria-hidden="true"></i> Mensagem enviada. </span>
+
+      <div class="button-container">
+        <button type="submit" class="btn btn-primary" id="submit-contato">
+          <span>Solicitar</span>
+          <!-- <img src="img/send.png" /> -->
+        </button>
+      </div>
+
+    </form>
+
+  </div>
